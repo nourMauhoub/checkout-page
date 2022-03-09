@@ -8,14 +8,18 @@ body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 }
-header{
-    margin: 1.25em;
-
-
 h1{
     text-transform: capitalize;
     
 }
+ .title{
+     margin: .5em;
+}
+header{
+    margin: 1.25em;
+
+
+
 .card{
     background: #ececec;
     border-radius: 1em;
@@ -28,7 +32,7 @@ h1{
             margin: 1.25em;
             border-radius: 1em;
         }
-        h1{
+        h1, .title{
             font-size: 1rem;
             margin-top: 1.5em;
         }
@@ -139,6 +143,7 @@ hr{
 main{
     margin: 1.25em;
     .information{
+        margin-bottom: 1em;
         text-transform: capitalize;
         .contact-info , .shipping-address{
             .email, .phone, .name, .address, .city{
@@ -177,5 +182,74 @@ label{
             
             
         }
+        .check-box{
+            color: #333333;
+            font-weight: bold;
+display: flex;
+input{
+    border: 1px solid #888888;
+    border-radius: .5em;
+   width: 1em;
+   height: 1em;
+
+}
+   }
+   .continue-btn{
+       button{
+           display: block;
+      background: #e66114;
+      border: none;
+      border-radius: .5em;
+     padding: 15px 32px;
+      float: right;
+      color: #ffffff;
+      text-transform: capitalize;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+       }
+
+   }
+    }
+}
+footer{
+    text-transform: capitalize;
+    color: #666666;
+            text-align: center;
+            font-weight: bold;
+           
+}
+@media only screen and (min-width: 768px) {
+    body{
+        margin: 1.25em 1.25em .5em 1.25em;    }
+    header{
+      
+        display: flex;
+        float: right;
+    }
+    main{
+        display: flex;
+    }
+    footer{
+        margin-top: 9em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+        margin: 4em 4em 1em 4em;
+    }
+    footer{
+        margin-top: 9em;
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        margin: 4em 4em 1em 4em;    }
+    footer{
+        margin-top: 9em;
     }
 }
